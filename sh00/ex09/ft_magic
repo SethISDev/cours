@@ -1,0 +1,1 @@
+find . -type f -name "*.42file" -exec file {} \; | grep -q "42"
