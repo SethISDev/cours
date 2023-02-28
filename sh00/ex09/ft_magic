@@ -1,1 +1,1 @@
-find . -type f -name "*.42file" -exec file {} \; | grep -q "42"
+0	string 42\0\0\0\042 42 file
