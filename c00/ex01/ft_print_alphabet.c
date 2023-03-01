@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lpaul <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/01 14:47:10 by lpaul             #+#    #+#             */
-/*   Updated: 2023/03/01 14:49:45 by lpaul            ###   ########.fr       */
+/*   Created: 2023/03/01 14:53:28 by lpaul             #+#    #+#             */
+/*   Updated: 2023/03/01 15:57:09 by lpaul            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(void)
+void	ft_print_alphabet(void)
 {
-	char c;
-	c = 'b';
-    	write(1, &c, 1);
+	char	c;
+	c = 'a';
+
+	while (c <= 'z')
+	{
+		write(1, &c, 1);
+		++c;
+	}
 }
 
 int main(void)
 {
-	ft_putchar();
+	ft_print_alphabet();
 	return(0);
 }
