@@ -6,28 +6,27 @@
 /*   By: lpaul <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 16:27:16 by lpaul             #+#    #+#             */
-/*   Updated: 2023/03/01 16:37:15 by lpaul            ###   ########.fr       */
+/*   Updated: 2023/03/01 17:06:24 by lpaul            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include <stdio.h>
+#include <unistd.h>
 
 void	ft_print_numbers(void)
 {
-	char	c;
-	
+	char	c;	
+
 	c = 48;
 	while (c <= 57)
 	{
-		write(1, &c, 1); 
+		write(1, &c, 1);
 		++c;
 	}
 }
 
 int	main(void)
-{
-	ft_print_numbers();
-	return(0);
-}
 
+{
+	ft_print_numbers ();
+	return (0);
+}
